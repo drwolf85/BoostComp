@@ -175,7 +175,7 @@ void wolfBoostComp::processReplacing(float **inputs, float **outputs, VstInt32 s
   float *out2 = outputs[1];
 
   while(--sampleFrames >= 0) {
-    *out1++ = boostcomp(*in1++, adj1, adj2, adj3, adj4, fParam5) - asymKonst;
-    *out2++ = boostcomp(*in2++, adj1, adj2, adj3, adj4, fParam5) - asymKonst;
+    *out1++ = boostcomp(adj5 + *in1++, adj1, adj2, adj3, adj4, fParam6) - asymKonst;
+    *out2++ = boostcomp(adj5 + *in2++, adj1, adj2, adj3, adj4, fParam6) - asymKonst;
   }
 }
