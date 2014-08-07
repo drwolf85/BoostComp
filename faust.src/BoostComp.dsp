@@ -4,7 +4,7 @@ declare version "0.01";
 declare copyright "2014";
 
 //define the boostcomp from an header file
-boostcomp = ffunction(float boostcomp(float, float, float, float, float, float, float), "BoostCompFaust.h", "-lm");
+boostcomp = ffunction(float boostcomp(float, float, float, float, float, float, float), "BoostComp.h", "-lm");
 
 // set the agrument of the filter
 drive = hslider("Drive", 1, 1e-6, 4, 1e-6);
