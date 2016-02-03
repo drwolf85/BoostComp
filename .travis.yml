@@ -1,7 +1,7 @@
 language: c++
 
 install:
-- make all cleanobj
+- make -f vst.linux/Makefile all cleanobj
 
 notifications:
   email:
