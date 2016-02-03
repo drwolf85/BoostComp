@@ -1,0 +1,11 @@
+language: c++
+
+install:
+- make all cleanobj
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
+sudo: false
